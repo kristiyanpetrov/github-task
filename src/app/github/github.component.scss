@@ -1,0 +1,42 @@
+@media (max-width: 576px) {
+  .blockquote {
+    font-size: 8px;
+    float: left;
+  }
+}
+
+@media (min-width: 576px) {
+  .blockquote {
+    font-size: 10px;
+    .align {
+      float: right;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .blockquote {
+    font-size: 12px;
+    .align {
+      float: right;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .blockquote {
+    font-size: 13px;
+    .align {
+      float: right;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .blockquote {
+    font-size: 14px;
+    .align {
+      float: right;
+    }
+  }
+}

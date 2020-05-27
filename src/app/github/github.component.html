@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="col-md-12" *ngFor="let github of data">
+    <div class="card mt-2">
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <div class="row">
+            <div class="col-sm">
+              <span><b>Title:</b> {{github.commit.message}}</span>
+              <br>
+              <span><b>User:</b> {{github.commit.author.name}}</span>
+            </div>
+            <div class="col-sm">
+              <span class="align"><b>id: </b>{{github.sha}}</span>
+            </div>
+          </div>
+          <footer class="mt-2"><span><b>Created: </b></span>{{github.commit.committer.date | date: 'medium'}}</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
